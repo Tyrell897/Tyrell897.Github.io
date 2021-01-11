@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<header>
+  <title>ADHD</title>
+</header>
 <img
   src="smiley.gif"
   alt="Smiley face"
@@ -102,12 +106,54 @@
   <source src="horse.ogg" type="audio/ogg" />
   <source src="horse.mp3" type="audio/mpeg" />
 </audio>
-
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4" />
+  <source src="forrest_gump.ogg" type="video/ogg" />
+  <track
+    src="fgsubtitles_en.vtt"
+    kind="subtitles"
+    srclang="en"
+    label="English"
+  />
+  <track
+    src="fgsubtitles_no.vtt"
+    kind="subtitles"
+    srclang="no"
+    label="Norwegian"
+  />
+</video>
+<style>
+  #para1 {
+    text-align: center;
+    color: red;
+  }
+</style>
+<body>
+  <p id="para1">Hello World!</p>
+  <p>This paragraph is not affected by the style.</p>
+</body>
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
 <figure>
-  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%" />
   <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure>
+<style>
+p.center {
+  text-align: center;
+  color: red;
+}
+</style>
+<body>
+
+<h1 class="center">This heading will not be affected</h1>
+<p class="center">This paragraph will be red and center-aligned.</p> 
 <footer>
-  <p>Author: Tyrell WIlliams<br>
-  <a href="twilliams@rootedschool.org">twilliams@rootedschool.org</a></p>
+  <p>
+    Author: Tyrell WIlliams<br />
+    <a href="twilliams@rootedschool.org">twilliams@rootedschool.org</a>
+  </p>
 </footer>
