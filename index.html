@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
-</head>
-<body>
-
-<h1>ON this page</h1>
-
-<table>
-  <tr>
-    <th>Signs and Symptoms</th>
-    <th>Managing Symptoms</th>
-  </tr>
-  <tr>
-    <td>Types</td>
-    <td>Causes</td>
-  </tr>
-  <tr>
-    <td>Diagnosis</td>
-    <td>Treatments</td>
-  </tr>
-</table>
-    <body>
-      <h1>Attention-Deficit / Hyperactivity Disorder (ADHD)</h1>
-      Attention-Deficit / Hyperactivity Disorder (ADHD)
-      <p>
-        ADHD is one of the most common neurodevelopmental disorders of
-        childhood. It is usually first diagnosed in childhood and often lasts
-        into adulthood. Children with ADHD may have trouble paying attention,
-        controlling impulsive behaviors (may act without thinking about what the
-        result will be), or be overly active.
-      </p>
-      <a href="yep.html">next </a>
-    </body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ON this page</h1>
     <html>
       <head>
         <style>
-              body {
-          color: #92a8d1;
-              .myDiv {
-                border: 5px outset red;
-                background-color: lightblue;
-                text-align: center;
-              }
-              div {
-                border-color: white;
-              }
-              body {
-                background-color: coral;
-              }
+          body {
+            margin: 0;
+          }
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+          }
+
+          li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+          }
+
+          li a.active {
+            background-color: #4CAF50;
+            color: white;
+          }
+
+          li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+          }
         </style>
       </head>
       <body>
-        <div class="myDiv">
+        <ul>
+          <li><a class="active" href="#home">WHat is ADHD</a></li>
+          <li><a href="#news">Signs and Symptoms</a></li>
+          <li><a href="#contact">Types</a></li>
+          <li><a href="#about">Causes of ADHD</a></li>
+        </ul>
+
+        <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+          <h1>Attention-Deficit / Hyperactivity Disorder (ADHD)</h1>
+          Attention-Deficit / Hyperactivity Disorder (ADHD)
+          <h3>What is ADHD</h3>
+          <p>
+            ADHD is one of the most common neurodevelopmental disorders of
+            childhood. It is usually first diagnosed in childhood and often
+            lasts into adulthood. Children with ADHD may have trouble paying
+            attention, controlling impulsive behaviors (may act without thinking
+            about what the result will be), or be overly active.
+          </p>
+          <p>
+            Also notice that we have set overflow:auto to sidenav. This will add
+            a scrollbar when the sidenav is too long (for example if it has over
+            50 links inside of it).
+          </p>
           <h2>Signs and Symptoms</h2>
           <p>
             It is normal for children to have trouble focusing and behaving at
             one time or another. However, children with ADHD do not just grow
             out of these behaviors. The symptoms continue, can be severe, and
             can cause difficulty at school, at home, or with friends. A child
-            with ADHD might: daydream a lot forget or lose things a lot squirm
-            or fidget talk too much make careless mistakes or take unnecessary
-            risks have a hard time resisting temptation have trouble taking
-            turns have difficulty getting along with others Learn more about
-            signs and symptoms.
+            with ADHD might:
+            <li>
+              Daydream a lot forget or lose things a lot squirm or fidget talk
+              too much make careless mistakes
+            </li>
+            <li>
+              take unnecessary risks have a hard time resisting temptation have
+              trouble taking turns have difficulty getting along with others
+              Learn more about signs and symptoms.
+            </li>
           </p>
           <h3>Types</h3>
           <p>
@@ -107,6 +126,7 @@ table, th, td {
             many things, including these, might make symptoms worse, especially
             in certain people. But the evidence is not strong enough to conclude
             that they are the main causes of ADHD.
+            <a href="index.html">Top of page</a>
           </p>
           <h4>
             Diagnosis
@@ -133,11 +153,16 @@ table, th, td {
             tried. What works best can depend on the child and family. Good
             treatment plans will include close monitoring, follow-ups, and
             making changes, if needed, along the way.
-            <img
-              src="https://www.cdc.gov/ncbddd/adhd/images/adhd-facts2.jpg"
-              alt="physician speaking to family"
-            />
+            <a href="https://www.cdc.gov/ncbddd/adhd/images/adhd-facts2.jpg">
+              <img
+                src="https://www.cdc.gov/ncbddd/adhd/images/adhd-facts2.jpg"
+                alt="physician speaking to family"
+                <a
+              />
+              href="<img />
+            </a>
           </p>
+
           <h6>
             Managing Symptoms: Staying Healthy
           </h6>
@@ -165,23 +190,74 @@ table, th, td {
         </div>
       </body>
     </html>
-    <hr style="width:50%;text-align:left;margin-left:0" />
-    <p>The color fo\r ADHD awarness is <span style="color:orange">orange</span>.</p>
+    <table>
+      <tr>
+        <th>Signs and Symptoms</th>
+        <th>Managing Symptoms</th>
+      </tr>
+      <tr>
+        <td>Types</td>
+        <td>Causes</td>
+      </tr>
+      <tr>
+        <td>Diagnosis</td>
+        <td>Treatments</td>
+      </tr>
+    </table>
 
-    <svg width="400" height="100">
-      <rect
-        width="400"
-        height="100"
-        style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"
-      />
-      <a href="yep.html">THANK YOU, Please leave a rate on the webiste </a>
-    </svg>
-  </head>
+    <body>
+      <a href="yep.html">next </a>
+    </body>
+    <html>
+      <head>
+        <style>
+              body {
+          color: #92a8d1;
+              .myDiv {
+                border: 5px outset red;
+                background-color: lightblue;
+                text-align: center;
+              }
+              div {
+                border-color: white;
+              }
+              body {
+                background-color: coral;
+              }
+        </style>
+      </head>
+      <body>
+        <div class="myDiv">
+          <hr style="width:50%;text-align:left;margin-left:0" />
+          <p>
+            The color fo\r ADHD awarness is
+            <span style="color:orange">orange</span>.
+          </p>
+
+          <svg width="400" height="100">
+            <rect
+              width="400"
+              height="100"
+              style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"
+            />
+            <a href="yep.html">THANK YOU, Please leave a rate on the webiste</a>
+          </svg>
+        </div>
+      </body>
+    </html>
+    <iframe
+      src="/default.asp"
+      width="100%"
+      height="300"
+      style="border:1px solid white;"
+    >
+    </iframe>
+    <footer>
+      <aside>
+        Author: Tyrell WIlliams<br />
+
+        <a href="twilliams@rootedschool.org">twilliams@rootedschool.org</a>
+      </aside>
+    </footer>
+  </body>
 </html>
-<iframe
-  src="/default.asp"
-  width="100%"
-  height="300"
-  style="border:1px solid white;"
->
-</iframe>
