@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <header>
   <h1>ADHD</h1>
 </header>
@@ -7,68 +7,85 @@
   How would u rate this website Thank you for your time.
 </h1>
 <form action="/action_page.php" method="get">
-<input id="selected" list="browsers" name="browser" />
-<datalist id="browsers">
-  <option data-value="InternetExplorer" value="1"></option>
-  <option data-value="Firefox" value="2"></option>
-  <option data-value="Chrome" value="3"></option>
-  <option data-value="Opera" value="4"></option>
-  <option data-value="Safari" value="5"></option>
-</datalist>
-<input id="submit" type="submit" />
+  <input id="selected" list="browsers" name="browser" />
+  <datalist id="browsers">
+    <option data-value="InternetExplorer" value="1"></option>
+    <option data-value="Firefox" value="2"></option>
+    <option data-value="Chrome" value="3"></option>
+    <option data-value="Opera" value="4"></option>
+    <option data-value="Safari" value="5"></option>
+  </datalist>
+  <input id="submit" type="submit" />
 </form>
-  <footer>
-  <p>Author: Tyrell WIlliams<br>
-  <a href="twilliams@rootedschool.org">twilliams@rootedschool.org</a></p>
+<footer>
+  <p>
+    Author: Tyrell WIlliams<br />
+    <a href="twilliams@rootedschool.org">twilliams@rootedschool.org</a>
+  </p>
 </footer>
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-  margin: 0;
-}
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+      li a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-</style>
-</head>
-<body>
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="yuu.html">
+      <label for="fname">Email:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Phone number:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
 
-  
-<form action="yuu.html">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <form action="/ok.html" method="get">
+      First name: <input type="text" name="fname" value="Donald" /><br />
+      Last name: <input type="text" name="lname" value="Duck" /><br />
+      <input type="submit" id="mySubmit" value="Submit" formtarget="_blank" />
+    </form>
+    <p>
+      Note: ONly press sumbit after the name is filled out. THank YOU
+    </p>
 
+    <p id="demo"></p>
 
-</body>
+    <script>
+      function myFunction() {
+        document.ok.html("mySubmit").formTarget = "_self";
+        document.ok.html("demo").innerHTML =
+          "The value of the formtarget attribute was changed from '_blank' to '_self'.";
+      }
+    </script>
+  </body>
 </html>
